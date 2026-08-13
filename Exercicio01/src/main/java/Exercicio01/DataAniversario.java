@@ -6,13 +6,26 @@ public class DataAniversario {
 	private int mes;
 
 	
-	public void DataAniversario(int dia, int mes){
+	public DataAniversario(int dia, int mes){
 		this.dia = dia;
 		this.mes = mes;
 		}
-		
-	// gets e sets…
-	
+
+	public int getDia() {
+		return dia;
+	}
+
+	public void setDia(int dia) {
+		this.dia = dia;
+	}
+
+	public int getMes() {
+		return mes;
+	}
+
+	public void setMes(int mes) {
+		this.mes = mes;
+	}
 	
 	public boolean equals(Object outraData){
 		if (outraData instanceof DataAniversario){
