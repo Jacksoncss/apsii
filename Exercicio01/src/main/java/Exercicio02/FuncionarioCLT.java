@@ -12,4 +12,21 @@ public class FuncionarioCLT extends Funcionario {
         this.valeAlimentacao = valeAlimentacao;
     }
 
+    public double getValeTransporte() {
+        return valeTransporte;
+    }
+
+    public double getValeAlimentacao() {
+        return valeAlimentacao;
+    }
+
+    @Override
+    public double calcularSalario() {
+        return super.calcularSalario() + valeTransporte + valeAlimentacao;
+    }
+
+    @Override
+    public double calcularDesconto() {
+        return super.calcularDesconto() + 50.00;
+    }
 }
