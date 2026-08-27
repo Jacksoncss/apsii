@@ -8,7 +8,7 @@ public class Funcionario {
     protected double salarioBase;
 
     public Funcionario(String nome, String matricula, double salarioBase,
-                       String dataAdmissao) {
+                        String dataAdmissao) {
         this.nome = nome;
         this.matricula = matricula;
         this.salarioBase = salarioBase;
@@ -36,9 +36,9 @@ public class Funcionario {
     }
 
     @Override
-    public String toString() { double
-            liquido = calcularSalario() - calcularDesconto();
-        return String.format( "%s [%s] - Salário: R$ %.2f | Desconto: R$ %.2f | Líquido: R$ %.2f", nome, matricula,
-        calcularSalario(), calcularDesconto(), liquido );
+    public String toString() {
+        double liquido = calcularSalario() - calcularDesconto();
+        return String.format("%s [%s] - Salário: R$ %.2f | Desconto: R$ %.2f | Líquido: R$ %.2f",
+                nome, matricula, calcularSalario(), calcularDesconto(), liquido);
     }
 }
